@@ -5,9 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-----google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!----daisyUi tailwind css-->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+    <!---iconify link-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!------tailwind custome css-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <header>
+        <!---navbar area-->
+        <nav>
+            <div class="navbar bg-[#F85559] p-6 rounded-full text-white my-3">
+                <div class="">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F85559] rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>About Us</a>
+
+                            </li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="navbar-start  hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>About Us</a>
+
+                        </li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-2xl font-bold"><img src="images/logo.png" alt=""
+                        srcset="">Fruit
+                    Burst</a>
+                <div class="navbar-end relative">
+                    <input type="text" placeholder="Search Here" class="input w-full max-w-xs rounded-full" />
+                    <iconify-icon icon="material-symbols:search"
+                        class="absolute text-black text-2xl mx-3 "></iconify-icon>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
 
 </body>
 
