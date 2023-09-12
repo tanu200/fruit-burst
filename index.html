@@ -28,6 +28,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'paragraph': '#121212',
                     }
                 }
             }
@@ -85,7 +86,7 @@
             </div>
         </nav>
         <!---banner area-->
-        <section>
+        <section class="mb-10">
             <div class="relative">
                 <div class="carousel w-full">
                     <div id="slide1" class="carousel-item relative w-full">
@@ -155,7 +156,8 @@
                     </div>
 
                 </div>
-                <div class="flex justify-center bg-white absolute -mt-20 text-center mx-60 p-10 rounded-lg space-x-4">
+                <div
+                    class="flex justify-center bg-white absolute -mt-20 text-center mx-60 p-10 rounded-lg space-x-4 hidden lg:flex  ">
                     <img src="images/fruit1.png" alt="" srcset="">
                     <img src="images/fruit2.png" alt="" srcset="">
                     <img src="images/fruit3.png" alt="" srcset="">
@@ -167,6 +169,54 @@
         </section>
 
     </header>
+    <main>
+        <!--   Deal of the day-->
+        <section class="my-64 container">
+
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-5xl font-bold"> Deal of the day</h1>
+                    <p class="text-gray-500 mt-5">Contrary to popular belief, is not simply random text. It has roots in
+                        a
+                        piece
+                        of classical <br>
+                        Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!---count section-->
+                <div>
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl  text-gray-500">
+                                <span style="--value:29;"></span>
+                            </span>
+                            Days
+                        </div><span class="text-5xl">:</span>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl  text-gray-500">
+                                <span style="--value:15;"></span>
+                            </span>
+                            Hours
+                        </div><span class="text-5xl">:</span>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl  text-gray-500">
+                                <span style="--value:25;"></span>
+                            </span>
+                            Minutes
+                        </div><span class="text-5xl">:</span>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl  text-gray-500">
+                                <span style="--value:08;"></span>
+                            </span>
+                            Seconds
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
 
 </body>
 
